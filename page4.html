@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <title>Admin</title>
-    </head>
-    <body>
-        <h1>Login2 Successful</h1>
-        <h2>Pretty Cool Right?</h2>
-        <hr>
-        WOAH               
-        <hr>
-    </body>
-</html>
+<body>
+    <div id="wrapper">
+        <div id="note-editor">
+        <h2 id="note-editor-title">Create Note</h2>
+        <label>Title:</label>
+        <input type="text" id="title" name="title" />
+        <label>Body:</label>
+        <textarea rows="10" cols="42" id="message" name="message"></textarea>
+        <label>Color:</label>
+        <select id="color" name="color">
+            <option value="red" selected>Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+        <div id="button">
+            <button id="add-btn">Create Note</button>
+            <div id="error"></div>
+        </div>
+        </div>
+
+        <div id="notes-section">
+        <h2>Notes</h2>
+        <ul id="notes"></ul>
+        </div>
+    </div>
+</body>
